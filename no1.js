@@ -1,13 +1,16 @@
 function palindrom(str) {
-    const newString = str.split("").reverse().join("")
-    //console.log(newString)
-    if (str === newString) {
+    let lower = str.toLowerCase()
+    console.log(lower)
+    let newString = lower.split("")
+    newString.reverse()
+    let result = newString.join("")
+    if (lower === result) {
         console.log(`${str} adalah kata palindrom`)
     } else {
         console.log(`${str} bukan kata palindrom`)
     }
 }
-palindrom("malam")
+palindrom("MalAm")
 
 function cekKata(str) {
     let newStr = ""
